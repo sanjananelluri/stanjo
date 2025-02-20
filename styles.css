@@ -1,0 +1,405 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background:rgb(67, 67, 246);
+    color: white;
+    padding: 30px;
+    text-align: left;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between items */
+    font-size: 18px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Icons */
+.contact-info ion-icon {
+    font-size: 20px;
+    color: white; /* Icon color */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Email Link */
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation */
+nav {
+    background:white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+
+    list-style: none;
+    padding: 0;
+    margin-left:-200px
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    
+    background: url('https://source.unsplash.com/1600x900/?led,lighting') no-repeat center center/cover;
+    color: white;
+    
+    text-align: left;
+}
+
+.hero-content {
+    background-image:url('./images/bg1.jpg');
+    max-width:1700px;
+    margin: auto;
+    padding: 100px 0px;
+    border-radius: 0px;
+}
+h1{
+    font-size: 60px;
+    margin-left: 15px;
+    padding-top: 0px;
+}
+
+.light{
+    font-size: 2.5rem;
+    margin-bottom: 120px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-left:20px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.shop-btn {
+    background: white;
+    margin-right: 10px;
+}
+
+.explore-btn {
+    background: rgb(104, 104, 244);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.about{
+    text-align: center;
+    background-image: url('bg2.jpg');
+}
+.about h1 {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about h4 {
+    color:black;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center; /* Align icons vertically */
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons ion-icon {
+    color: #fff;
+    font-size: 30px;
+    transition: 0.3s ease;
+    margin-left: 15px; /* Adjust spacing between icons */
+}
+
+.icons ion-icon:hover {
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    width: 400px;
+    padding: 10px;
+    flex-direction:row;
+    text-align: center;
+    border-radius: 15px; /* Rounded corners for the box */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    
+}
+.box img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+.about{
+    align-items:center ;
+}
+.whys{
+    text-align: left;
+    margin: 20px;
+}
+.why {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures 4 items in a row */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    width:100%;
+}
+.features {
+    border-radius: 0 !important; /* Remove rounded corners for the entire content */
+    text-align: center; /* Center-align content */
+    width: 100%; /* Ensure full width inside the container */
+    display: flex;
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center items */
+}
+.features img {
+    width: 100%; /* Ensures the image takes full width of the container */
+    height: 200px; /* Ensures all images have the same height */
+    object-fit: contain; /* Ensures the entire image fits inside without cropping */
+    border-radius: 0 !important; /* Removes any rounded corners */
+    display: block; /* Removes unwanted gaps */
+    background-color: white; /* Optional: Fills empty space around the image */
+}
+
+.strength{
+    text-align: left;  /* Aligns the text to the left */
+    margin-left: 0;    /* Ensures text starts from the left */
+    padding-left: 20px; /* Optional: Adds some spacing from the left edge */
+    width: fit-content; /* Ensures it takes only the required width */
+}
+.trust {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures 4 items in a row */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: center;
+    padding: 20px;
+}
+.img{
+    width:300px;
+    text-align: center;
+}
+/* Ensure images fit well */
+.strength img {
+    width: 100%; /* Makes images responsive */
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners */
+}
+/* Ensure .strength takes full width */
+.strength {
+    text-align: left;
+    width: 100%; /* Ensures it takes full row */
+    padding: 20px;
+}
+
+/* Grid container for images */
+.trust {
+    display: flex;
+    justify-content: center; /* Centers images */
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    padding: 20px;
+}
+
+/* Styling for individual images */
+.img {
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+}
+
+/* Ensure images fit well */
+.img img {
+    width: 200px; /* Set a fixed width for all images */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image fills the box without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+
+.section-container {
+    background-color:rgb(211, 240, 252); /* Light gray background */
+    padding: 40px; /* Adds spacing inside */
+}
+.download-section {
+    background-color:rgb(105, 105, 238) ;
+    padding: 20px;
+    color: white !important;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%; /* Make it span the full width */
+    height: auto; /* Adjust height based on content */
+    text-align: center; /* Center the text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers text & button */
+    justify-content: center;
+}
+
+
+/* Ensure text is readable */
+.download-section h2,
+.download-section p {
+    font-size: 18px;
+}
+
+/* Button Styling */
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color:rgb(11, 11, 85);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.download-btn:hover {
+    background-color: #a3b5c9;
+}
+.clients{
+    text-align: center;
+
+}
+.clientimage {
+    display: flex;
+    justify-content: center;  /* Centers images horizontally */
+    padding: 20px;
+}
+
+.imgtrust {
+    display: flex;
+    gap: 15px;  /* Adds space between images */
+    flex-wrap: wrap;  /* Ensures responsiveness */
+}
+
+.imgtrust img {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a soft shadow */
+}
+.footer {
+    display: flex;  /* Enables left-right layout */
+    justify-content: space-between;  /* Spreads content evenly */
+    align-items: flex-start;  /* Aligns content to the top */
+    background-color: #33396c; /* Dark background for footer */
+    color: white;
+    padding: 30px;
+    width: 100%;
+}
+
+.footer-left {
+    width: 40%; /* Left section takes 40% */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align content to the left */
+}
+
+.footer-left img {
+    width: 120px; /* Adjust logo size */
+    display: block; /* Ensures it doesn't align inline */
+    margin-bottom: 10px; /* Adds slight spacing below */
+}
+
+.footer-left h3,
+.footer-left span {
+    margin: 5px 0; /* Consistent spacing */
+}
+
+
+.footer-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-icons a:hover {
+    color: #ffd700; /* Gold on hover */
+}
+
+/* Right Section */
+.footer-right {
+    width: 50%; /* Right section takes 50% */
+    display: flex;
+    justify-content: space-between; /* Separates "Products" and "Others" */
+}
+
+.footer-right h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-right li:hover {
+    color: #ffd700; /* Gold on hover */
+}
