@@ -1,0 +1,15 @@
+# Ignore SSH private keys
+id_rsa
+id_rsa.pub
+
+# Ignore node modules (for Node.js projects)
+node_modules/
+
+# Ignore Python virtual environments
+venv/
+
+# Ignore environment variables
+.env
+
+# Ignore macOS system files
+.DS_Store
